@@ -8749,7 +8749,7 @@ body {
 
 .document-container {
   min-height: 100%;
-  margin: 60px 5px 20px;
+  margin: 40px 5px 20px;
 }
 .document-container canvas {
   display: block;
@@ -8757,6 +8757,20 @@ body {
   margin-right: auto;
   margin-bottom: 20px;
   background-color: #fff;
+}
+.document-container .digital-signature {
+  position: absolute;
+  margin-left: 20px;
+  padding: 20px;
+  display: inline-block;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.document-container .digital-signature img {
+  max-width: 150px;
+  height: auto;
 }
 .document-toolbar {
   padding: 10px 20px;
