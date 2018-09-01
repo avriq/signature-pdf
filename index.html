@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Signature</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <a href="javascript:;">Back</a>
+        </div><!-- .sidebar-header -->
+        <div class="sidebar-nav">
+          <div class="btn-group btn-group-rounded justify-content-center d-flex mt-5 mb-5" role="group">
+            <button type="button" class="btn btn-uppercase btn-primary px-4">Continue</button>
+            <button type="button" class="btn btn-uppercase btn-secondary px-4">Cancel</button>
+          </div><!-- .btn-group -->
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Document Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recipient(s)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Signature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log</a>
+            </li>
+          </ul><!-- .nav -->
+        </div><!-- .sidebar-nav -->
+      </div><!-- .sidebar -->
+
+      <div class="content">
+        <div class="content-header">
+          <a href="javascript:;" class="btn btn-rounded btn-sm btn-uppercase btn-primary float-right px-4 py-2">Download</a>
+          <h2>PrivyID FSD WEB Old System.pdf</h2>
+        </div><!-- .content-header -->
+        <div class="document-toolbar-container-sticky">
+          <div class="document-toolbar">
+            <div class="d-flex justify-content-between">
+              <div class="d-block text-primary">Go to page</div>
+              <div class="d-block text-primary"><button class="btn btn-primary btn-rounded">+</button></div>
+              <div class="d-block text-primary"><strong>Page</strong> 1/28</div>
+            </div><!-- .justify-content-between -->
+          </div><!-- .document-toolbar -->
+        </div><!-- .document-toolbar -->
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="document-container">
+                <div class="document-render" id="documentRender">
+                </div>
+              </div><!-- .document-container -->
+            </div><!-- .col-## -->
+          </div><!-- .row -->
+        </div><!-- .container-fluid -->
+      </div><!-- .content -->
+    </div><!-- .wrapper -->
+
+  <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+  <script src="vendor/bootstrap-4.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="vendor/pdfjs/pdf.js"></script>
+  <script src="assets/js/pdf.config.js"></script>
+  <script src="assets/js/app.js"></script>
+  </body>
+</html>
