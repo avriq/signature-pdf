@@ -13,13 +13,11 @@ $(document).ready(() => {
       documentToolbar.removeClass('document-toolbar-sticky')
     }
     var scrollDistance = $(window).scrollTop()
-    // scrollDistance == 'undefined' ? 1 : scrollDistance
     var result = Math.abs(Math.round(scrollDistance / 1227));
     if (result == 0) {
       result = 1
     }
     $('#pageCurrent').text(result)
-    console.log(result)
   })
   if ($(window).scrollTop() > distance) {
     documentToolbar.addClass('document-toolbar-sticky')

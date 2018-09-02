@@ -14,6 +14,7 @@ interact('.digital-signature')
 
       target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
       target.style.border = '2px dashed #ddd';
+      target.classList.remove('digital-signature--remove')
 
       target.setAttribute('data-x', x);
       target.setAttribute('data-y', y);
@@ -21,6 +22,6 @@ interact('.digital-signature')
     },
     onend: function (event) {
       var target = event.target;
-      target.style.border = '2px dashed transparent';
+      target.classList.add('digital-signature--remove')
     }
   });
