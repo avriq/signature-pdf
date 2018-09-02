@@ -1,10 +1,10 @@
 Signature in PDF
 ===
-Hi. I'm just a sample of how to drag and drop digital signature into rendered pdf document.
+Hi. I'm just a sample of how to drag and drop digital signature into rendered pdf document. I can render pdf document from base64 encode data. If you wanna see my live demo, you just [click this link](http://templateninja.net/signature-pdf/)
 
 Getting Started
 ---------------
-If you want to keep it simple, just run or open index.html in your web browser. Now you're ready to go!
+Run index.html in your web server or if you want to keep it simple, just open index.html in your web browser. Now you're ready to go!
 
 Dependencies
 ---------------
