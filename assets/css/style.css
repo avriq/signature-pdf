@@ -8648,6 +8648,7 @@ body {
   position: relative;
 }
 .sidebar-nav .nav-link {
+  padding-left: 50px;
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 700;
@@ -8707,6 +8708,12 @@ body {
     transition: none;
   }
 }
+.sidebar-nav .nav-link ion-icon {
+  position: absolute;
+  left: 15px;
+  top: 8px;
+  font-size: 23px;
+}
 
 .content {
   margin-left: 250px;
@@ -8746,6 +8753,17 @@ body {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
+.btn-toolbar-rounded {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 18px;
+}
+.btn-toolbar-rounded ion-icon {
+  font-size: 16px;
+}
 
 .document-container {
   min-height: 100%;
@@ -8773,7 +8791,7 @@ body {
   height: auto;
 }
 .document-toolbar {
-  padding: 10px 20px;
+  padding: 9px 20px 10px;
   border-left: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
   box-sizing: border-box;
@@ -8785,6 +8803,52 @@ body {
   top: 0;
   left: 250px;
   width: calc(100% - 250px);
+}
+.document-toolbar .go-page {
+  position: relative;
+  display: inline-block;
+}
+.document-toolbar .go-page input[type=number] {
+  height: 26px;
+  width: 40px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #59236F;
+  background-color: transparent;
+}
+.document-toolbar .go-page .arrow-dropup,
+.document-toolbar .go-page .arrow-dropdown {
+  position: absolute;
+  right: 0;
+  width: 15px;
+  height: 13px;
+  padding: 0;
+  text-align: center;
+  line-height: 13px;
+  border: none;
+  background-color: transparent;
+}
+.document-toolbar .go-page .arrow-dropup:focus,
+.document-toolbar .go-page .arrow-dropdown:focus {
+  outline: none;
+}
+.document-toolbar .go-page .arrow-dropup ion-icon,
+.document-toolbar .go-page .arrow-dropdown ion-icon {
+  font-size: 18px;
+  position: absolute;
+  left: calc(50% - 9px);
+}
+.document-toolbar .go-page .arrow-dropup {
+  top: 1px;
+}
+.document-toolbar .go-page .arrow-dropup ion-icon {
+  top: calc(50% - 8px);
+}
+.document-toolbar .go-page .arrow-dropdown {
+  bottom: -1px;
+}
+.document-toolbar .go-page .arrow-dropdown ion-icon {
+  top: calc(50% - 11px);
 }
 
 /*# sourceMappingURL=style.css.map */

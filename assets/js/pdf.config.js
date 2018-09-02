@@ -21,6 +21,7 @@ function renderPDF(url, canvasContainer, options) {
     function pageNumber(pdfDoc) {
         for(var num = 1; num <= pdfDoc.numPages; num++)
             pdfDoc.getPage(num).then(renderPage);
+        document.getElementById('pageOf').innerHTML += pdfDoc.numPages
     }
     PDFJS.disableWorker = true;
     PDFJS.getDocument({ data: url }).then(pageNumber);

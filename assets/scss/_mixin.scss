@@ -21,42 +21,9 @@
           transition: $transition;
 }
 
-@mixin animation($animation) {
-  -webkit-animation: $animation;
-  -moz-animation: $animation;
-  -ms-animation: $animation;
-  animation: $animation;
-}
-
-@mixin font-family( $family: $font-primary ) {
-	font-family: $family;
-}
-
-@mixin translate3d($x, $y, $z) {
-  -webkit-transform: translate3d($x,$y,$z);
-  -moz-transform: translate3d($x,$y,$z);
-  -ms-transform: translate3d($x,$y,$z);
-  -o-transform: translate3d($x,$y,$z);
-  transform: translate3d($x,$y,$z);
-}
-
-@mixin rotate($deg) {
-  -webkit-transform: rotate($deg);
-  -moz-transform: rotate($deg);
-  -ms-transform: rotate($deg);
-  transform: rotate($deg);
-}
-
 @mixin transform($string) {
   -webkit-transform: $string;
   -moz-transform: $string;
   -ms-transform: $string;
   transform: $string;
-}
-
-@mixin transform-origin($position) {
-  -webkit-transform-origin: $position;
-  -moz-transform-origin: $position;
-  -ms-transform-origin: $position;
-  transform-origin: $position;
 }

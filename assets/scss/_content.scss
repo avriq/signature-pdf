@@ -1,0 +1,18 @@
+.content {
+	margin-left: 250px;
+	&-header {
+		padding: 10px 20px;
+		border-bottom: 1px solid darken($white, 5%);
+		border-left: 1px solid darken($white, 5%);
+		box-sizing: border-box;
+		background-color: $white;
+		h2 {
+			margin: 0;
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		.btn {
+			margin-top: -2px;
+		}
+	}
+}

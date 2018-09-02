@@ -12,25 +12,25 @@
     <div class="wrapper">
       <div class="sidebar">
         <div class="sidebar-header">
-          <a href="javascript:;">Back</a>
+          <a href="javascript:;"><ion-icon name="arrow-back"></ion-icon> Back</a>
         </div><!-- .sidebar-header -->
         <div class="sidebar-nav">
-          <div class="btn-group btn-group-rounded justify-content-center d-flex mt-4 mb-4" role="group">
+          <div class="btn-group btn-group-rounded justify-content-center d-flex mt-4 mb-5" role="group">
             <button type="button" class="btn btn-uppercase btn-primary px-4">Continue</button>
             <button type="button" class="btn btn-uppercase btn-secondary px-4">Cancel</button>
           </div><!-- .btn-group -->
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#">Document Info</a>
+              <a class="nav-link" href="#"><ion-icon name="information-circle"></ion-icon> Document Info</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recipient(s)</a>
+              <a class="nav-link" href="#"><ion-icon name="people"></ion-icon> Recipient(s)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">My Signature</a>
+              <a class="nav-link" href="#"><ion-icon name="key"></ion-icon> My Signature</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Log</a>
+              <a class="nav-link" href="#"><ion-icon name="timer"></ion-icon> Log</a>
             </li>
           </ul><!-- .nav -->
         </div><!-- .sidebar-nav -->
@@ -44,9 +44,22 @@
         <div class="document-toolbar-container-sticky">
           <div class="document-toolbar">
             <div class="d-flex justify-content-between">
-              <div class="d-block text-primary">Go to page</div>
-              <div class="d-block text-primary"><button class="btn btn-primary btn-rounded">+</button></div>
-              <div class="d-block text-primary"><strong>Page</strong> 1/28</div>
+              <div class="d-block text-primary">Go to page 
+                <span class="go-page">
+                  <input type="number" value="1" min="1" max="4">
+                  <button type="button" class="arrow-dropup" onclick="this.parentNode.querySelector('[type=number]').stepUp();"><ion-icon name="arrow-dropup"></ion-icon></button>
+                  <button type="button" class="arrow-dropdown" onclick="this.parentNode.querySelector('[type=number]').stepDown();"><ion-icon name="arrow-dropdown"></ion-icon></button>
+                </span>    
+              </div>
+              <div class="d-block text-primary">
+                <button class="btn btn-primary btn-toolbar-rounded btn-sm"><ion-icon name="add"></ion-icon></button>
+                <button class="btn btn-primary btn-toolbar-rounded btn-sm"><ion-icon name="remove"></ion-icon></button>
+                <button class="btn btn-primary btn-toolbar-rounded btn-sm"><ion-icon name="expand"></ion-icon></button>
+                <button class="btn btn-primary btn-toolbar-rounded btn-sm"><ion-icon name="sync"></ion-icon></button>
+              </div>
+              <div class="d-block text-primary">
+                <strong>Page</strong> <span class="page-current" id="pageCurrent">1</span>/<span class="page-of" id="pageOf"></span>
+              </div>
             </div><!-- .justify-content-between -->
           </div><!-- .document-toolbar -->
         </div><!-- .document-toolbar -->
@@ -71,6 +84,8 @@
   <script src="vendor/bootstrap-4.1.3/dist/js/bootstrap.min.js"></script>
   <script src="vendor/pdfjs/pdf.js"></script>
   <script src="vendor/interact/interact.min.js"></script>
+  <!--<script src="vendor/ionicons/ionicons.js"></script>-->
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
   <script src="assets/js/pdf.config.js"></script>
   <script src="assets/js/signature.config.js"></script>
   <script src="assets/js/app.js"></script>
