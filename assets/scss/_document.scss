@@ -66,6 +66,14 @@
 				border: none;
 				border-bottom: 1px solid $primary;
 				background-color: transparent;
+				-moz-appearance: textfield;
+				&::-webkit-inner-spin-button,
+				&::-webkit-outer-spin-button {
+					-webkit-appearance: none;
+				}
+				&:focus {
+					outline: none;
+				}
 			}
 			.arrow-dropup,
 			.arrow-dropdown {

@@ -8843,6 +8843,13 @@ body {
   border: none;
   border-bottom: 1px solid #59236F;
   background-color: transparent;
+  -moz-appearance: textfield;
+}
+.document-toolbar .go-page input[type=number]::-webkit-inner-spin-button, .document-toolbar .go-page input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.document-toolbar .go-page input[type=number]:focus {
+  outline: none;
 }
 .document-toolbar .go-page .arrow-dropup,
 .document-toolbar .go-page .arrow-dropdown {
