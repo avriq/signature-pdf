@@ -8644,6 +8644,14 @@ body {
 .sidebar-header a {
   font-weight: 600;
 }
+.sidebar-header a:hover {
+  text-decoration: none;
+}
+.sidebar-header a ion-icon {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
 .sidebar-nav .nav-item {
   position: relative;
 }
@@ -8776,6 +8784,9 @@ body {
   margin-bottom: 20px;
   background-color: #fff;
 }
+.document-container canvas:last-child {
+  margin-bottom: 0;
+}
 .document-container .digital-signature {
   position: absolute;
   margin-left: 20px;
@@ -8821,10 +8832,10 @@ body {
   position: absolute;
   right: 0;
   width: 15px;
-  height: 13px;
+  height: 12px;
   padding: 0;
   text-align: center;
-  line-height: 13px;
+  line-height: 12px;
   border: none;
   background-color: transparent;
 }
@@ -8839,16 +8850,16 @@ body {
   left: calc(50% - 9px);
 }
 .document-toolbar .go-page .arrow-dropup {
-  top: 1px;
+  top: 0;
 }
 .document-toolbar .go-page .arrow-dropup ion-icon {
-  top: calc(50% - 8px);
+  bottom: -5px;
 }
 .document-toolbar .go-page .arrow-dropdown {
-  bottom: -1px;
+  bottom: 1px;
 }
 .document-toolbar .go-page .arrow-dropdown ion-icon {
-  top: calc(50% - 11px);
+  top: -5px;
 }
 
 /*# sourceMappingURL=style.css.map */

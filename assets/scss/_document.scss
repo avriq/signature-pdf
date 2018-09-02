@@ -8,6 +8,9 @@
 			margin-right: auto;
 			margin-bottom: 20px;
 			background-color: $white;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 		.digital-signature {
 			position: absolute;
@@ -50,10 +53,10 @@
 				position: absolute;
 				right: 0;
 				width: 15px;
-				height: 13px;
+				height: 12px;
 				padding: 0;
 				text-align: center;
-				line-height: 13px;
+				line-height: 12px;
 				border: none;
 				background-color: transparent;
 				&:focus {
@@ -66,15 +69,15 @@
 				}
 			}
 			.arrow-dropup {
-				top: 1px;
+				top: 0;
 				ion-icon {
-					top: calc(50% - 8px);
+					bottom: -5px;
 				}
 			}
 			.arrow-dropdown {
-				bottom: -1px;
+				bottom: 1px;
 				ion-icon {
-					top: calc(50% - 11px);
+					top: -5px;
 				}
 			}
 		}
